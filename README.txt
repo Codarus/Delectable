@@ -1,5 +1,4 @@
 Christopher Hernandez
-Virgil Bistriceanu
 Illinois Institute of Technology
 CS-445
 Project
