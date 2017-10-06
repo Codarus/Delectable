@@ -1,0 +1,75 @@
+body {
+font-family: 'Roboto', sans-serif;
+background-color: silver;
+padding: 0;
+margin: 0;
+overflow-y: scroll;
+}
+
+h1,h2 {
+font-family: 'Miltonian Tattoo', cursive;
+}
+
+#warehouse {
+text-align:right;
+float: right;
+width: 650px;
+height: 400px;
+margin-top: 75px;
+}
+
+header {
+background-color: white;
+border-style:solid;
+border-color:red;
+height:80px;
+}
+
+
+#nav {
+	background-color: #222;
+	height: 70px;
+}
+#nav-wrapper {
+	width: 950px;
+	margin: 0 auto;
+	margin-left: 0px;
+	text-align: left;
+	display: flex;
+}
+#navbar-header {
+	display: inline-block;
+	width: 50px;
+}
+#links {
+	display: inline-block;
+	margin-left: 43px;
+	margin-top: 25px;
+	flex: 1;
+}
+#contact a:visited {
+	color: lightgray;
+	display: inline-block;
+	text-decoration: none;
+}
+#nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#nav ul li{
+	display: inline-block;	
+}
+#nav ul li a:hover {
+	background: #333;
+}
+#nav ul li a,a:visited{
+	color: #ccc;
+	padding: 25px;
+	text-decoration: none;
+}
+#nav ul li a:hover{
+	color: white;
+	text-decoration: none;
+}

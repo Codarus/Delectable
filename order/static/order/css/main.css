@@ -1,0 +1,90 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: silver;
+	padding: 0;
+	margin: 0;
+	overflow-y: scroll;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+p {
+	text-align: center;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+#imgmaster {
+	width: 1500;
+	display: flex;
+}
+#i1 {
+	width: 750px;
+}
+#i2 {
+	flex: 1;
+}
+#i1 img{
+	height: 200px;
+	width: 200px;
+	float: left;
+	clear: left;
+}
+#i2 img{
+	height: 200px;
+	width: 200px;
+	float: right;
+	clear: right;
+}
+
+#nav {
+	background-color: #222;
+	height: 70px;
+}
+#nav-wrapper {
+	width: 950px;
+	margin: 0 auto;
+	margin-left: 0px;
+	text-align: left;
+	display: flex;
+}
+#navbar-header {
+	display: inline-block;
+	width: 50px;
+}
+#links {
+	display: inline-block;
+	margin-left: 43px;
+	margin-top: 25px;
+	flex: 1;
+}
+#contact a:visited {
+	color: lightgray;
+	display: inline-block;
+	text-decoration: none;
+}
+#nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#nav ul li{
+	display: inline-block;	
+}
+#nav ul li a:hover {
+	background: #333;
+}
+#nav ul li a,a:visited{
+	color: #ccc;
+	padding: 25px;
+	text-decoration: none;
+}
+#nav ul li a:hover{
+	color: white;
+	text-decoration: none;
+}

@@ -1,0 +1,14 @@
+{% extends "menu/header.html" %}
+
+{% block content %}
+
+<br><p> Please enter your credentials</p>
+<form method="POST" action=""> {% csrf_token %}
+	{{cform.as_p}}
+	<br><p> Please confirm your credentials and provide shipping and billing info<p>
+	{{form.as_p}}
+	<input id="reset" type="reset" value="Reset" onclick="location.href='/menu';">
+	<input id="submit" type="submit" value="Submit Order" onclick="location.href='/order';">
+</form><br>
+
+{% endblock %}

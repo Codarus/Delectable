@@ -1,0 +1,49 @@
+{% extends "menu/confirmation_header.html" %}
+
+{% block content %}
+
+<form method="POST" action="">{% csrf_token %}
+<div id='container'>
+{{form.as_p}}
+<div id='b'><button id='search' type="submit">Search</button></div>
+</div>
+</form>
+<p>*Please search in only one category at a time</p>
+<br>
+
+{% for o in order %}
+<table>
+	<tr><td>ID: {{o.id}}</td></tr>
+	<tr><td>Ordered: {{o.order_date}}</td></tr>
+	<tr><td>Delivery Date: {{o.delivery_date}}</td></tr>
+	<tr><td>Status: {{o.status}}</td></tr>
+	<tr><td>Name: {{o.name}}</td></tr>
+	<tr><td>Email: {{o.email}}</td></tr>
+	<tr><td>Phone: {{o.phone}}</td></tr>
+	<tr><td>Shipping Info: {{o.shipping_info}}</td></tr>
+	<tr><td>Billing Info: {{o.billing_info}}</td></tr>
+	<tr><td>Total: {{o.total}}</td></tr>
+	<tr><td>Surcharge: {{o.surcharge}}</td></tr>
+<table>
+<br><br><br><br>
+{% endfor %}
+<br><br><br><br>
+
+{% for d in date %}
+<table>
+	<tr><td>ID: {{d.id}}</td></tr>
+	<tr><td>Ordered: {{d.order_date}}</td></tr>
+	<tr><td>Delivery Date: {{d.delivery_date}}</td></tr>
+	<tr><td>Status: {{d.status}}</td></tr>
+	<tr><td>Name: {{d.name}}</td></tr>
+	<tr><td>Email: {{d.email}}</td></tr>
+	<tr><td>Phone: {{d.phone}}</td></tr>
+	<tr><td>Shipping Info: {{d.shipping_info}}</td></tr>
+	<tr><td>Billing Info: {{d.billing_info}}</td></tr>
+	<tr><td>Total: {{d.total}}</td></tr>
+	<tr><td>Surcharge: {{d.surcharge}}</td></tr>
+<table>
+<br><br><br><br>
+{% endfor %}
+<br><br><br><br>
+{% endblock %}

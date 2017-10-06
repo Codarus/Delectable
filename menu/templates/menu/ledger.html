@@ -1,0 +1,46 @@
+{% extends "menu/confirmation_header.html" %}
+
+{% block content %}
+
+<script>
+var t1 = 0;
+var t2 = 0;
+var t3 = 0;
+var t6 = 0;
+var t12 = 0;
+var count = 0;
+{% for o in order1 %}
+
+t1 = t1 + {{o.total}};
+count = count + 1;
+
+{% endfor %}
+{% for o in order2 %}
+
+t2 = t2 + {{o.total}};
+count = count + 1;
+
+{% endfor %}
+{% for o in order3 %}
+
+t3 = t3 + {{o.total}};
+count = count + 1;
+
+{% endfor %}
+{% for o in order6 %}
+
+t6 = t6 + {{o.total}};
+count = count + 1;
+
+{% endfor %}
+{% for o in order12 %}
+
+t12 = t12 + {{o.total}};
+count = count + 1;
+
+{% endfor %}
+
+document.write('Months/Revenue/Orders' + '<br>' + "M1/" + t1 + '/' + count + '<br>' + 'M2/' + t2 + '/' + count +
+ '<br>' + 'M3/' + t3 + '/' + count +'<br>' + 'M6/' + t6 + '/' + count + '<br>' + 'M12/' + t12 + '/' + count);
+</script>
+{% endblock %}

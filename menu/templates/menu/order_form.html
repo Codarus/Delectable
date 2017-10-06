@@ -1,0 +1,11 @@
+{% extends "menu/confirmation_header.html" %}
+
+{% block content %}
+
+<form method="POST" action="">{% csrf_token %}
+	<div id='helper'>{% include 'menu/includes/helper.html' %}<div>
+	<input id="submit" type="submit" value="Cancel Order">
+</form>
+<p>*Type "cancelled" to cancel your order</p>
+
+{% endblock %}

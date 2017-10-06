@@ -1,0 +1,55 @@
+body {
+font-family: 'Roboto', sans-serif;
+background-color: saddlebrown;
+}
+
+h1,h2 {
+font-family: 'Miltonian Tattoo', cursive;
+}
+
+#warehouse {
+text-align:right;
+float: right;
+width: 700px;
+height: 400px;
+margin-top: 75px;
+}
+
+header {
+background-color: maroon;
+border-style:solid;
+border-color:red;
+}
+
+#container (
+width: 1000px;
+margin: 0px auto;
+)
+
+#text,#section{float:left;}
+		
+@media screen and (max-width:950px) {
+	img{
+	max-width:100%;
+	height:auto;
+	}
+	
+	#warehouse{
+		width:50%;
+		}
+}
+
+@media screen and (max-width:500px) {
+	img{
+	max-width:100%;
+	height:auto;
+	}
+	
+	#text{
+		width:100%;
+	}
+	
+	#warehouse{
+		width:100%;
+		}
+}

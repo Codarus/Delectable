@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Miltonian+Tattoo' rel='stylesheet' type='text/css'>
+
+<form action="pathtoscript" method="Post"></form>
+
+{% load staticfiles %}
+<link rel='stylesheet'  href="{% static 'contact/css/contact.css' %}"
+ type='text/css'/>
+</head>
+
+<body>
+
+	<div id="nav">
+		<div id="nav-wrapper">
+			<div id="navbar-header">
+				<img id="navbar-brand" src="{% static 'about/img/Logo.jpg' %}" alt="our logo" style="height:70px;"></img>
+			</div>
+			<div id="links">
+			<ul>
+				<li><a href="/">Home</a></li><li>
+				<a href="/menu">Menu</a></li><li>
+				<a href="/about">About Us</a></li><li>
+				<a href="/contact">Contact Us</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	
+	<h2>Contact Us</h2>
+	<p>Whether you are an existing customer wishing to check on your order or a new customer looking
+		for more information, our representatives are always happy to help. For information on your
+		order, please contact our customer serveice department. For issues with our website please
+		contact our technical support department.</p>
+	
+	<footer>
+		<h2>Phone Numbers</h2>
+		<p>Customer Service<br>111-111-1111</p>
+		<p>Technical Support<br>222-222-2222</p>
+	</footer>
+	
+	<br>
+	<div id="icons">
+	<a href="https://www.facebook.com/"><img src="{% static 'contact/img/facebook.png' %}" alt="link to our Facebook page"></a>
+	<a href="https://twitter.com/"><img src="{% static 'contact/img/twitter.png' %}" alt="link to our Twitter page"></a>
+	</div>
+	
+	<div id="map-canvas" />
+</body>
+
+</html>

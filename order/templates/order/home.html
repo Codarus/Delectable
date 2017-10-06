@@ -1,0 +1,11 @@
+{% extends "order/header.html" %}
+
+{% block content %}
+
+<form method="POST" action=""> {% csrf_token %}
+{{form.as_p}}
+<input type="reset" value="Reset">
+<input type="submit" value="Submit Order">
+</form>
+
+{% endblock %}

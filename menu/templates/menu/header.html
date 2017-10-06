@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Menu</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Miltonian+Tattoo' rel='stylesheet' type='text/css'>
+
+{% load staticfiles %}
+<link rel='stylesheet'  href="{% static 'menu/css/menu.css' %}"
+ type='text/css'/>
+ 
+
+
+<script src="http://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+crossorigin="anonymous">
+</script>
+<script src="{% static 'menu/js/menu.js' %}" type='text/javascript'></script>
+
+</head>
+
+<body>
+
+	<div id="nav">
+		<div id="nav-wrapper">
+			<div id="navbar-header">
+				<img id="navbar-brand" src="{% static 'about/img/Logo.jpg' %}" alt="our logo" style="height:70px;"></img>
+			</div>
+			<div id="links">
+			<ul>
+				<li><a href="/">Home</a></li><li>
+				<a href="/menu">Menu</a></li><li>
+				<a href="/about">About Us</a></li><li>
+				<a href="/contact">Contact Us</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div id="page">
+	<h1>Products and Services</h1>
+	<p>Imagine 4-star restaurant quality food at a convenient price. <i>Delectable</i> has turned that dream
+		into a reality! On this page you will find our most popular food items. We may have products and services available that are not listed 
+		here. If there is something we do not have listed here or in our product catalog please let us know and 
+		we will see if we can add it to our offerings. <a href="/contact">Contact Us</a> to speak to a customer
+		service representative.</p>
+		<br>
+		<a href="{% static 'menu/other/menu.pdf' %}">2016 Menu</a>
+		<br><hr>
+	<form>
+	<table border="1">
+		<th>${{bread.price_per_person}}
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}"><img id="im1" src="{% static 'menu/img/bread.jpg' %}"><br>Bread Basket</a>
+		<input type="number" id="bread">
+		</th>
+		<td>Basket of bread with complimentary butter.
+			<br><br>
+			Category: organic, vegetarian
+			<br><br>
+			<a href="{% static 'menu/other/menu.pdf' %}">Download our menu for a complete selection</a>
+		</td>
+		<th>${{fish.price_per_person}}
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}"><img id="im2" src="{% static 'menu/img/fish.png' %}"><br>Fish</a><br>
+		<input type="number" id="fish">
+		</th>
+		<td>A single serving of an exotic fish imported from Japan mixed with our signature herbs and spices.
+			<br><br>
+			Category: vegetarian
+			<br><br>
+			<a href="{% static 'menu/other/menu.pdf' %}">Download our menu for a complete selection</a>
+		</td>
+	</table>
+	<table border="1">
+		<th>${{rice.price_per_person}}
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}"><img id="im3" src="{% static 'menu/img/rice.jpg' %}"><br>White Rice w/ Vegetables</a>
+		<input type="number" id="rice">
+		</th>
+		<td>White rice prepared to perfection with fresh, hand-picked vegetables.
+			<br><br>
+			Category: organic, vegetarian
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}">See our full range of beverage products in our product catalog</a> 
+		</td>
+		<th>${{csalad.price_per_person}}
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}"><img id="im4" src="{% static 'menu/img/salad.jpg' %}"><br>Ceasar Salad</a>
+		<input type="number" id="salad">
+		</th>
+		<td>Ceasar Salad prepared with our secret recipe and peppered with herbs and spices.
+			<br><br>
+			Category: organic, vegetarian
+			<br><br>
+			<a href="{% static 'menu/other/menu.pdf' %}">Download our menu for a complete selectiong</a>
+		</td>
+	</table>
+	<table border="1">
+		<th>${{tsoup.price_per_person}}
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}"><img id="im5" src="{% static 'menu/img/soup1.jpg' %}"><br>Tomato Soup</a>
+		<input type="number" id="tsoup">
+		</th>
+		<td>Tomato soup with a twist; several home-grown herbs and spices are added in to create a one-of-a-kind taste.
+			<br><br>
+			Category: organic, vegetarian
+			<br><br>
+			<a href="{% static 'menu/other/menu.pdf' %}">View our full product list in our product catalog</a>
+		</td>
+		<th>${{tvsoup.price_per_person}}
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}"><img id="im5" src="{% static 'menu/img/soup2.jpg' %}"><br>Tomato-Vegetable Soup</a><br>
+		<input type="number" id="tvsoup">
+		</th>
+		<td>Our mouthwatering tomato soup with vegetables instead of herbs and spices.
+			<br><br>
+			Category: organic, vegetarian
+			<br><br>
+			<a href="{% static 'menu/other/menu.pdf' %}">View our full product list in our product catalog</a>
+		</td>
+	</table>
+	<table border="1">
+		<th>${{vsoup.price_per_person}}
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}"><img id="im5" src="{% static 'menu/img/soup3.jpg' %}"><br>Vegetable Soup</a><br>
+		<input type="number" id="vsoup">
+		</th>
+		<td>Vegetable soup made from the finest ingredients freshly picked from our gardens.
+			<br><br>
+			Category: organic, vegetarian
+			<br><br>
+			<a href="{% static 'menu/other/menu.pdf' %}">View our full product list in our product catalog</a>
+		</td>
+		<th>${{beverage.price_per_person}}
+			<br><br>
+		<a href="{% static 'menu/other/menu.pdf' %}"><img id="im5" src="{% static 'menu/img/beverage.jpg' %}" style="height:60px;"><br>Beverages</a>
+		<input type="number" id="beverage">
+		</th>
+		<td>We have a wide variety of beverages available for our even our most discerning customers. Customers have their choice of Pepsi (regular and diet),
+			Coca-Cola (regular and diet), Sprite (regular and diet), Fanta (orange and grape), Aquafina purified water, wine, or beer.
+			<br><br>
+			<a href="{% static 'menu/other/menu.pdf' %}">View our full product list in our product catalog</a>
+		</td>
+	</table>
+	</form>
+	
+	<hr>
+	<p>*Prices are for a single unit</p>
+	<p>*The minimum order size for any food item or type of beverage is 5</p>
+	<p>*The surcharge for a weekend delivery is <span id='surcharge'>{{surcharge.price_per_person}}</span>%</p>
+	
+	<div id="form">
+	{% block content %}
+	{% endblock %}
+	</div>
+	
+	<div id="calc">
+	<input type="button" id="button" value="calculate cost" style="width:8%;">
+	</div>
+	<p>*AFTER filling out your information,
+	Click the "calculate cost" button above to make your selection and get the price of your order</p>
+
+	
+	<footer>
+		<h2>Phone Numbers</h2>
+		<p>Customer Service<br>111-111-1111</p>
+		<p>Technical Support<br>222-222-2222</p>
+	</footer>
+	
+	</div>
+	
+	<script>
+		var bread = {{bread.price_per_person}}
+		var fish = {{fish.price_per_person}}
+		var rice = {{rice.price_per_person}}
+		var csalad = {{csalad.price_per_person}}
+		var tsoup = {{tsoup.price_per_person}}
+		var tvsoup = {{tvsoup.price_per_person}}
+		var vsoup = {{vsoup.price_per_person}}
+		var beverage = {{beverage.price_per_person}}
+		var charge = {{surcharge.price_per_person}}
+	</script>
+	
+</body>
+
+</html>

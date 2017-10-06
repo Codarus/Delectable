@@ -1,0 +1,15 @@
+{% extends "menu/confirmation_header.html" %}
+
+{% block content %}
+
+<h3>Thank you for choosing Delectable today!</h3>
+<p>Here at <i>Delectable</i>, we pride ourselves in both excellent food, and excellent service.</p>
+<p>Below you will find two URLS: the first will allow you to check on your order,
+and the second will allow you to cancel your order for any reason, up until the
+morning of your delivery date.</p>
+<p>If you have any questions, please feel free to contact us.</p>
+
+Click <a href="../vieworder/">here</a> to review your order<br><br>
+Click <a href="{% url 'cancel' pk=new.id %}">here</a> to cancel your order. Make another one anytime!
+<br>
+{% endblock %}

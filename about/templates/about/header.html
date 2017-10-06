@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Miltonian+Tattoo' rel='stylesheet' type='text/css'>
+
+{% load staticfiles %}
+<link rel='stylesheet'  href="{% static 'about/css/about.css' %}"
+ type='text/css'/>
+</head>
+
+<body>
+
+<div id="nav">
+	<div id="nav-wrapper">
+		<div id="navbar-header">
+			<img id="navbar-brand" src="{% static 'about/img/Logo.jpg' %}" alt="our logo" style="height:70px;"></img>
+		</div>
+		<div id="links">
+		<ul>
+			<li><a href="/">Home</a></li><li>
+			<a href="/menu">Menu</a></li><li>
+			<a href="/about">About Us</a></li><li>
+			<a href="/contact">Contact Us</a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+	
+	<div id="container">
+
+	<img id="warehouse" src="{% static 'about/img/Food.jpg' %}" alt="Only the freshest food"></img>
+	
+	<aside id="text">
+	<h1>About Us</h1>
+	<p><i>Delectables</i> is a catering business for the new age. We serve great food fresh at a price that
+		won't break your wallet. We have a reputation for providing healty, quality food and outstanding customer service.
+		We have gained that reputation by listening to our customers needs and responding by providing the food and
+		services they need delivered right to them. Here at <i>Delectable</i> we have pride in being able to offer
+		you the best catering services at an exceptional value and also being flexible enough to provide for any
+		special requirements your group may have. When you call <i>Delectable</i> you will speak to a real person who will
+		work with you to fulfill your group's needs.</p>
+	<p>It is our goal to simplify the process but still provide the highest quality coffee break and refreshment 
+		service available, by consistently delivering value and satisfaction guaranteed. Our mission is to supply
+		your office with what you want, when you want it and at an unbeatable value. Our team will carry out 
+		our mission in a courteous, honest, and friendly way with service that can not be beat.</p>
+	<p>At <i>Delectable</i> we believe we provide the best service due to these attributes:</p>
+	<ul>
+		<li>Customer Satisfaction</li>
+		<li>Quick Customer Response</li>
+		<li>Product Selection</li>
+		<li>Continual improvements to products and services</li>
+	</ul>
+	<div id="contact"><p>If you have any questions <a href="/contact">Contact Us</a>.</p></div>
+	
+	<footer>
+		<h2>Phone Numbers</h2>
+		<p>Customer Service<br>111-111-1111</p>
+		<p>Technical Support<br>222-222-2222</p>
+	</footer>
+	
+	</aside>
+	</div>
+</body>
+
+</html>

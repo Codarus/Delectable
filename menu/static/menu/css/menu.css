@@ -1,0 +1,97 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: silver;
+	padding: 0;
+	margin: 0;
+	overflow-y: scroll;
+}
+h1,h2 {
+	font-family: 'Miltonian Tattoo', cursive;
+}
+
+#im1, #im2, #im3, #im4, #im5 {
+	width: 100px;
+}
+
+table {
+	height: 200px;
+	width: 100%;
+	background-color:gray;
+}
+td {
+	width: 50%;
+}
+
+input {
+	width: 35%;
+	margin-top: 8px;
+}
+#calc {
+	text-align: left;
+}
+#calc input {
+	width: 8%;
+}
+
+#page a {
+	text-decoration: none;
+}
+#page a:visited{
+	color: purple;
+}
+
+#form {
+	width: 500px;
+}
+
+#form  #reset,#submit {
+	width: 25%;
+}
+
+#nav {
+	background-color: #222;
+	height: 70px;
+}
+#nav-wrapper {
+	width: 950px;
+	margin: 0 auto;
+	margin-left: 0px;
+	text-align: left;
+	display: flex;
+}
+#navbar-header {
+	display: inline-block;
+	width: 50px;
+}
+#links {
+	display: inline-block;
+	margin-left: 43px;
+	margin-top: 25px;
+	flex: 1;
+}
+#contact a:visited {
+	color: lightgray;
+	display: inline-block;
+	text-decoration: none;
+}
+#nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#nav ul li{
+	display: inline-block;	
+}
+#nav ul li a:hover {
+	background: #333;
+}
+#nav ul li a,a:visited{
+	color: #ccc;
+	padding: 25px;
+	text-decoration: none;
+}
+#nav ul li a:hover{
+	color: white;
+	text-decoration: none;
+}

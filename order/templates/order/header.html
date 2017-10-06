@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Orders</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+
+{% load staticfiles %}
+<link rel='stylesheet'  href="{% static 'order/css/order.css' %}"
+ type='text/css'/>
+</head>
+
+<body>	
+	
+	<div id="nav">
+		<div id="nav-wrapper">
+			<div id="navbar-header">
+				<img id="navbar-brand" src="{% static 'about/img/Logo.jpg' %}" alt="our logo" style="height:70px;"></img>
+			</div>
+			<div id="links">
+			<ul>
+				<li><a href="/">Home</a></li><li>
+				<a href="/menu">Menu</a></li><li>
+				<a href="/order">Place Order</a></li><li>
+				<a href="/about">About Us</a></li><li>
+				<a href="/contact">Contact Us</a></li>
+				
+			</ul>
+			</div>
+		</div>
+	</div>
+	
+	<br>
+	
+	<div>
+	<fieldset>
+	<legend>Place Order</legend>
+		{% block content %}
+		{% endblock %}
+	</fieldset>
+	
+	<input type="button" id="button" value="Hello!">
+	
+	<script   src="http://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous">
+	</script>
+	
+	<script>
+	$('#button').click(function(){
+		$('#id_name').val('gooday mate');
+	});
+	</script>
+	
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
